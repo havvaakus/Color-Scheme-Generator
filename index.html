@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+        <h2>Color Scheme Generator</h2>
+        <input type="color" id="colorPicker">
+        
+        <select id="modeSelect">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+        </select>
+        
+        <button onclick="getColorScheme">Get Color Scheme</button>       
+        <script src="index.js"></script>
+    </body>
+</html>
+
