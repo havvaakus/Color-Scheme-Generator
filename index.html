@@ -7,19 +7,25 @@
     </head>
     <body>
         <h2>Color Scheme Generator</h2>
-        <input type="color" id="colorPicker">
+        <main id="main">
+            <input type="color" id="colorPicker" aria-label="Select a color"/>
+    
+            <select id="modeSelect">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button id="getColorScheme">Get Color Scheme</button>
+    
+        </main>       
+        <div id="palette">
+        </div>
+        <div id="palette-codes"></div>
         
-        <select id="modeSelect">
-            <option value="monochrome">Monochrome</option>
-            <option value="monochrome-dark">Monochrome-dark</option>
-            <option value="monochrome-light">Monochrome-light</option>
-            <option value="analogic">Analogic</option>
-            <option value="complement">Complement</option>
-            <option value="analogic-complement">Analogic-complement</option>
-            <option value="triad">Triad</option>
-        </select>
-        
-        <button onclick="getColorScheme">Get Color Scheme</button>       
         <script src="index.js"></script>
     </body>
 </html>
