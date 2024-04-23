@@ -83,3 +83,6 @@ button:hover {
 }::-webkit-color-swatch-wrapper {
     padding: 0;
 }
+#check-mark {
+    vertical-align: middle;
+}
