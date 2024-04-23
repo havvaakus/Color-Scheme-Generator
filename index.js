@@ -12,10 +12,12 @@ document.getElementById("getColorScheme").addEventListener('click', function() {
         .then(response => response.json())
         .then(data => {
             const palette = document.getElementById("palette");
-            palette.innerHTML = ''; // Clear existing palette
+            // Clear existing palette
+            palette.innerHTML = ''; 
 
             const paletteCodes = document.getElementById("palette-codes");
-            paletteCodes.innerHTML = ''; // Clear existing palette
+            // Clear existing palette
+            paletteCodes.innerHTML = ''; 
 
             data.colors.forEach((colorObj) => {
                 const hexValue = colorObj.hex.value
